@@ -1,0 +1,12 @@
+{
+  "name": "wasm-crate",
+  "private": true,
+  "version": "0.0.0",
+  "main": "pkg/wasm_crate.js",
+  "scripts": {
+    "dev": "cargo watch -i .gitignore -i 'pkg/*' -s 'wasm-pack build'",
+    "build": "source $HOME/.cargo/env && wasm-pack build",
+    "clean": "cargo clean && rm -rf pkg"
+  },
+  "devDependencies": {}
+}
